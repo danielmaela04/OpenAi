@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>pdf cloud</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css' />
+</head>
+
+<body>
+  <div class="spinner-wrapper" id="loader">
+    <div class="spinner">
+    </div>
+  </div>
+
+  <section class="filterDiv home">
+    <section class="header-container">
+      <div class="form-container">
+        <input type="text" placeholder="Insira uma nova senha" id="text" />
+        <button id="submit" style="border: 1px solid #000;">Enter</button>
+      </div>
+      <span id="down"></span>
+      <div id="image"></div>
+    </section>
+    <section class="books-container" id="book"></section>
+  </section>
+
+  <section class="notification filterDiv upload">
+    <span onclick="logout()">Logout</span>
+  </section>
+
+  <section class="menu filterDiv menu">
+    <h1>Menu</h1>
+  </section>
+
+  <section class="bottom-container">
+    <div class="wrapper" onclick="filter('home')">
+      <img src="./assets/img/house.svg" alt="inicio" />
+      <figcaption class="bottom-text">Inicio</figcaption>
+    </div>
+    <div class="wrapper" onclick="filter('upload')">
+      <img src="./assets/img/new.svg" alt="Carregar" />
+      <figcaption class="bottom-text">Salvos</figcaption>
+    </div>
+    <div class="wrapper" onclick="filter('menu')">
+      <img src="./assets/img/justify.svg" alt="Menu" />
+      <figcaption class="bottom-text">Menu</figcaption>
+    </div>
+  </section>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
